@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Registro</title>
+
+<link href="EstiloPrestamos.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+
+A:hover
+{
+    background: grey;
+}
+Input:hover
+{
+    background: #FFD9BA;
+}
+Fieldset:hover
+{
+    background: lightblue;
+}
+Button:hover
+{
+  background: white;
+  border-color: lightblue;
+}
+H1
+{
+  background-color: white;
+  margin: 100px 700px 50px 700px;
+}
+</style>
+</head>
+<body>
+<center>
+<div>
+<h1>Registro de usuarios</h1>
+</div>
+</center>
+<div id="contenedor">
+<form id="form1" method="post" action="#">
+<ul>
+
+<fieldset>
+<li1>
+ <label class="titulo" for="nombre">Datos personales
+ <div>
+   <hr>
+   <span>
+   <label for="identificacion">Identificaci&oacuten:</label>
+   <input type="text" id="identificacion" name="identificacion" maxlenght="10" autosave="" autofocus="" onkeypress="return valida(event)" required/>
+   <strong><abbr title="required">*</abbr></strong>
+   </span>
+   <br>
+   <span>
+     <label for="nombre">Nombre(s):</label>
+     <input id="nombre" name="nombre" value="" required/>
+     <!--<strong><abbr title="required">*</abbr></strong>-->
+   </span>
+   <br>
+   <span>
+     <label for="apellido1">Primer apellido:</label>
+     <input id="apellido1" name="apellido1" value="" required/>
+     <!--<strong><abbr title="required">*</abbr></strong>-->
+   </span>
+   <br>
+   <span>
+     <label for="apellido2">Segundo Apellido:</label>
+     <input type="text" id="apellido2" name="apellido2" required/>
+     <!--<strong><abbr title="required">*</abbr></strong>-->
+   </span>
+   <br>
+   <span>
+     <label for="telefono">Tel&eacutefono fijo</label>
+     <input type="text" id="telefono" name="telefono" maxlenght="7" onkeypress="return valida(event)" required/>
+   </span>
+   <br>
+   <span>
+     <label for="telefono">Tel&eacutefono m&oacutevil</label>
+     <input type="text" id="telefono" name="telefono" maxlenght="10" onkeypress="return valida(event)" required/>
+     <script>
+       function valida(e)
+       {
+         tecla = (document.all) ? e.keyCode : e.which;
+
+         if (tecla==8)
+         {
+         return true;
+         }
+         patron =/[0-9]/;
+         tecla_final = String.fromCharCode(tecla);
+         return patron.test(tecla_final);
+       }
+      </script>
+   </span>
+   <br>
+   <span>
+     <label for="direccion">Direcci&oacuten</label>
+     <input type="text" id="direccion" name="direccion" required/>
+   </span>
+   <br>
+   <span>
+     <label for="email">Correo Electr&oacutenico</label>
+     <input type="text" id="email" name="email" required/>
+   </span>
+ </div>
+ </fieldset>
+<br>
+
+<section>
+     <p>
+         <center>
+         <button>Crear nueva cuenta</button>
+         <button><a href="InicioBiblioteca.html">Cancelar</a></button>
+     </p>
+</section>
+</ul>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>Pr&eacutestamos</title>
+
+<link href="EstiloPrestamos.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+
+A:hover
+{
+	background: grey;
+}
+Input:hover
+{
+	background: #FFD9BA;
+}
+Fieldset:hover
+{
+	background: lightblue;
+}
+Button:hover
+{
+  background: white;
+  border-color: lightblue;
+}
+</style>
+</head>
+<body>
+<h1>Pr&eacutestamos</h1>
+<div id="contenedor">
+<form id="form1" method="post" action="#">
+<ul>
+
+<fieldset>
+<li1>
+ <label class="titulo" for="nombre">Datos personales
+ <div>
+   <hr>
+   <span>
+   <label for="identificacion">Identificaci&oacuten:</label>
+   <input type="text" id="identificacion" name="identificacion" maxlenght="10" autosave="" autofocus="" onkeypress="return valida(event)" required/>
+   <strong><abbr title="required">*</abbr></strong>
+   <button name="buscar">Buscar</button>
+   </span>
+   <br>
+   <span>
+     <label for="nombre">Nombre(s):</label>
+     <input id="nombre" name="nombre" value="" required/>
+     <!--<strong><abbr title="required">*</abbr></strong>-->
+   </span>
+   <br>
+   <span>
+     <label for="apellido1">Primer apellido:</label>
+     <input id="apellido1" name="apellido1" value="" required/>
+     <!--<strong><abbr title="required">*</abbr></strong>-->
+   </span>
+   <br>
+   <span>
+     <label for="apellido2">Segundo Apellido:</label>
+     <input type="text" id="apellido2" name="apellido2" required/>
+     <!--<strong><abbr title="required">*</abbr></strong>-->
+   </span>
+   <br>
+   <span>
+     <label for="telefono">Tel&eacutefono fijo</label>
+     <input type="text" id="telefono" name="telefono" maxlenght="7" onkeypress="return valida(event)" required/>
+   </span>
+   <br>
+   <span>
+     <label for="telefono">Tel&eacutefono m&oacutevil</label>
+     <input type="text" id="telefono" name="telefono" maxlenght="10" onkeypress="return valida(event)" required/>
+     <script>
+       function valida(e)
+       {
+         tecla = (document.all) ? e.keyCode : e.which;
+
+         if (tecla==8)
+         {
+         return true;
+         }
+         patron =/[0-9]/;
+         tecla_final = String.fromCharCode(tecla);
+         return patron.test(tecla_final);
+       }
+      </script>
+   </span>
+   <br>
+   <span>
+     <label for="direccion">Direcci&oacuten</label>
+     <input type="text" id="direccion" name="direccion" required/>
+   </span>
+   <br>
+   <span>
+     <label for="email">Correo Electr&oacutenico</label>
+     <input type="text" id="email" name="email" required/>
+   </span>
+ </div>
+ </fieldset>
+<br>
+</form>
+ <form id="form2" method="post" action="#">
+<fieldset>
+<li2>
+ <label class="titulo" for="libro">Libro
+ <hr>
+   <span>
+     <label for="titulo">T&iacutetulo:</label>
+     <input type="text" id="titulo" name="titulo" value="" required/>
+     <strong><abbr title="required">*</abbr></strong>
+     <button>Buscar</button>
+   </span>
+   <br>
+   <span>
+     <label for="autor">Autor:</label>
+     <input type="text" id="autor" name="autor" value="" required/>
+     <!--<strong><abbr title="required">*</abbr></strong>-->
+   </span>
+   <br>
+   <span>
+     <label for="editorial">Editorial:</label>
+     <input type="text" id="editorial" name="editorial" value="" required/>
+   </span>
+   <br>
+   <span>
+     <label for="apublicacion">A&ntildeo de publicaci&oacuten:</label>
+     <input type="text" id="apublicacion" name="apublicacion" value="" required/>
+   </span>
+   <br>
+   <span>
+     <label for="genero">G&eacutenero:</label>
+     <input type="text" id="genero" name="genero" value="" required/>
+   </span>
+</li2>
+</fieldset>
+<br>
+<section>
+     <p>
+         <center>
+         <button>Solicitar pr&eacutestamo</button>
+         <button><a href="InterfazUsuario.html">Cancelar</a></button>
+     </p>
+</section>
+</ul>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body
+{
+background-image: url(Biblioteca.jpg);
+background-size: 100vw 100vh;
+border-radius: 20px;
+font-family: "Times New Roman";
+font-size: 25px;
+color: #8B4513;
+}
+
+h1
+{
+font-family: Times;
+font-size: 30px;
+text-align: center;
+color: #000;
+}
+
+#menu
+{
+  padding: 0 90px 90px 90px;
+}
+ 
+#menu ul
+{
+  margin: 50px 10px;
+  padding: 0;
+  list-style:none;
+}
+ 
+#menu ul li
+{
+  margin: 0 5px 0 0;
+  padding: 0;
+  float:left;
+}
+ 
+#menu ul li a
+{
+  display: block;
+  position: relative;
+  padding: 20px 50px;
+  border: 0;
+  background: #253575;
+  color: #B5C4E3;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+#menu ul li a:hover
+{
+  background: #31479B;
+}
+
+li:hover
+{
+    background-color: #CCC;
+}
+form
+{
+    background: rgba(0,0,0,0.8);
+    background-color: #F3F3F3;
+    background-attachment: fixed;
+    padding: 100px 200px;
+    border-color: white;
+    margin: auto;
+    box-sizing: border-box;
+    margin-right: 200px; 
+    margin-left: 200px;
+    margin-top: 200px;
+    border-radius: 20px;
+}
+
+.contenedor
+{
+max-width: 450px;
+padding: 200px;
+margin: auto;
+background: #D0CFB9;
+}
+.titulo
+{
+max-width: 500px;
+padding: 10px;
+margin: auto;
+background: #F2EFC5;
+}
